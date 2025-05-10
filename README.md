@@ -111,3 +111,39 @@ This activity confirms that the requirements accurately represent the system's n
 ---
 
 Each of these activities plays a crucial role in ensuring that the requirements for a software system are well understood, feasible, and clearly communicated, which is essential for the success of the project.
+
+## Types of Requirements
+
+### Functional Requirements
+
+- **User & Host Management:**  
+  Support user accounts for both customers and hosts. Hosts can create and update property listings (details, pricing, photos) and manage availability calendars. Customers and hosts each have separate portals for managing their information.
+  
+- **Search & Discovery:**  
+  Customers can search and filter available hotels by location, date, and other criteria. The system displays relevant results, including nearby hotels, personalised recommendations, and special offers.
+  
+- **Booking & Payments:**  
+  Allow customers to select a property and book it for specific dates. The booking service interacts with a payment gateway (third-party) to process transactions securely.
+  
+- **Booking Management:**  
+  Provide a service for viewing the booking history. Both customers and hosts can view current and past reservations and see details of each booking. Functions like cancellations or modifications can also be included.
+
+- **Notifications:**  
+  Automatically notify users about important events. For example, send an alert to the host when a new booking is made and inform the customer when their reservation is confirmed or when new promotions are available.
+
+### Non-functional Requirements
+
+- **Scalability:**  
+  The system must handle very high user traffic. It should use a microservices architecture with load balancers to distribute requests across many servers, enabling horizontal scaling as demand grows.
+
+- **Performance:**  
+  Fast response times are essential. The design uses caching (e.g., Redis) and optimized search (e.g., Elasticsearch) to reduce latency, and a CDN for static content to speed up delivery.
+
+- **Availability & Reliability:**  
+  The system should achieve high uptime. It uses redundant components (multiple servers, replicated databases) and master–slave database replication to ensure data availability and fault tolerance.
+
+- **Data Management & Consistency:**  
+  The design must handle large volumes of data. It uses asynchronous processing (message queues) and NoSQL storage (e.g., Cassandra for archival) to manage growing data sets. These ensure durable storage and eventual consistency under heavy load.
+
+- **Maintainability:**  
+  A microservices approach isolates functionality (search, booking, listings, etc.), making it easier to develop, test, and deploy components independently. This modularity aids ongoing maintenance and future expansion.
