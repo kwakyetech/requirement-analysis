@@ -166,7 +166,8 @@ Use Case Diagrams are a type of diagram used to describe the functional requirem
 Below is a Use Case Diagram for the booking system, illustrating the various actors and their interactions with the system.
 
 ![Booking System Use Case Diagram] 
-![alx-booking-uc](https://github.com/user-attachments/assets/ed82ab9a-edd1-41e2-934f-d029ddbe7398)
+![alx-booking-uc](https://github.com/user-attachments/assets/dd45ff64-a2d5-41a7-b9f1-f9094f4fd076)
+
 
 The actors in the diagram include:
 
@@ -176,3 +177,29 @@ The actors in the diagram include:
 
 The use cases involve activities like searching for properties, booking a property, managing listings, and processing payments.
 
+## Acceptance Criteria
+
+### Importance of Acceptance Criteria
+
+Acceptance Criteria are a set of predefined requirements that must be met for a feature or user story to be considered complete and acceptable by the stakeholders. In Requirement Analysis, acceptance criteria play a crucial role because they:
+
+- Ensure that all stakeholders have a common understanding of the feature requirements.
+- Help developers understand what needs to be built and testers understand what needs to be tested.
+- Serve as the basis for test cases and quality assurance.
+- Prevent scope creep by clearly defining what is and isn't included in a feature.
+
+### Example: Checkout Feature Acceptance Criteria
+
+**Feature:** Checkout Feature in the Booking Management System
+
+**Acceptance Criteria:**
+
+1. The user must be logged in to complete a booking.
+2. The checkout page must display property details, price, taxes, and total amount.
+3. The user must be able to input or confirm payment details.
+4. The system must validate the payment information before processing.
+5. A confirmation message must be displayed upon successful booking.
+6. The booking details must be stored in the user's account history.
+7. A confirmation email must be sent to the user after a successful booking.
+
+These criteria ensure that the checkout process is secure, informative, and seamless for the user.
