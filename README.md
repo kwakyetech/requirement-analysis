@@ -147,3 +147,32 @@ Each of these activities plays a crucial role in ensuring that the requirements 
 
 - **Maintainability:**  
   A microservices approach isolates functionality (search, booking, listings, etc.), making it easier to develop, test, and deploy components independently. This modularity aids ongoing maintenance and future expansion.
+
+## Use Case Diagrams
+
+### What are Use Case Diagrams?
+
+Use Case Diagrams are a type of diagram used to describe the functional requirements of a system. They provide a visual representation of how different actors (users or systems) interact with the system to achieve specific goals or tasks. Use Case Diagrams help in understanding the relationships between users and the system, identifying system requirements, and defining the boundaries of the system.
+
+### Benefits of Use Case Diagrams
+
+- **Clear Communication:** Use Case Diagrams simplify complex system functionalities, making it easier to communicate requirements between stakeholders, including developers, designers, and clients.
+- **System Boundaries:** They help in defining the boundaries of the system, clarifying what is inside and outside the scope.
+- **User Interaction:** Use Case Diagrams highlight how users will interact with the system, ensuring that functional requirements are aligned with user needs.
+- **Requirements Validation:** These diagrams help in validating the completeness of system requirements by providing a detailed outline of user goals and system responses.
+
+### Booking System Use Case Diagram
+
+Below is a Use Case Diagram for the booking system, illustrating the various actors and their interactions with the system.
+
+![Booking System Use Case Diagram] 
+![alx-booking-uc](https://github.com/user-attachments/assets/ed82ab9a-edd1-41e2-934f-d029ddbe7398)
+
+The actors in the diagram include:
+
+- **Customer**: Interacts with the system to search for properties, view details, and complete bookings.
+- **Host**: Manages property listings, availability, and reviews bookings.
+- **System**: Manages user accounts, processes payments, and provides notifications.
+
+The use cases involve activities like searching for properties, booking a property, managing listings, and processing payments.
+
